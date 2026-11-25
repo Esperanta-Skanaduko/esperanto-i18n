@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>esperanto-i18n: translation status</title>
+  <meta name="description" content="The Esperanta Skanaduko website in 66 languages: see how complete each translation is and fix one in your browser. No programming needed.">
+  <link rel="canonical" href="https://esperantaskanaduko.com/open-source/esperanto-i18n/">
+  <link rel="icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bar { height: 10px; background: var(--code-bg); border-radius: 5px; overflow: hidden; min-width: 100px; }
+    .bar > i { display: block; height: 100%; background: var(--green); }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .stats { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin: 12px 0; }
+    .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
+    .stat b { display: block; font-size: 26px; }
+  </style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../"><span class="star" aria-hidden="true">★</span> Esperanta Skanaduko · open source</a>
+  <nav aria-label="Project links"><a href="#status">Status</a><a href="#help">How to help</a><a href="https://github.com/Esperanta-Skanaduko/esperanto-i18n">GitHub</a></nav>
+</div></header>
+<main class="wrap">
+  <div class="hero">
+    <h1>esperanto-i18n</h1>
+    <p class="lead">The Esperanta Skanaduko website in 66 languages, and the tools to check them. If you read Esperanto and another language, you can fix a translation by editing one file, in your browser.</p>
+    <ul class="badges"><li>66 languages</li><li>i18next JSON</li><li>Audit tool</li><li>MIT</li></ul>
+    <p><a class="btn" href="#status">See the status</a><a class="btn secondary" href="https://github.com/Esperanta-Skanaduko/esperanto-i18n/blob/main/docs/TRANSLATING.md">Translator guide</a></p>
+  </div>
+
+  <section id="status" aria-labelledby="status-h">
+    <h2 id="status-h">How complete is each language?</h2>
+    <div class="stats" id="stats" aria-live="polite"></div>
+    <div class="card">
+      <div class="grid">
+        <div><label for="q">Find a language</label><input id="q" type="search" placeholder="Spanish, Español, es" autocomplete="off"></div>
+        <div><label for="sort">Sort by</label><select id="sort"><option value="coverage-asc">Needs most help first</option><option value="coverage-desc">Most complete first</option><option value="name">Name</option></select></div>
+      </div>
+      <div class="table-scroll"><table>
+        <caption class="sr-only">Translation coverage per language</caption>
+        <thead><tr><th scope="col">Language</th><th scope="col">Code</th><th scope="col">Translated</th><th scope="col">Missing</th><th scope="col">Still English</th><th scope="col">The file says</th><th scope="col">Help</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table></div>
+    </div>
+    <div class="note"><strong>Missing text is never blank on the website.</strong> The site falls back to English, so a gap shows as an English sentence. "The file says" is what the file claims about itself; the audit flags files that claim more than they deliver.</div>
+  </section>
+
+  <section id="help" aria-labelledby="help-h">
+    <h2 id="help-h">How to help, in four steps</h2>
+    <ol>
+      <li>Pick a language you know. Press <strong>Edit</strong> in the table (you need a free GitHub account; GitHub makes you a copy to edit).</li>
+      <li>Change only the text on the <em>right</em> of each colon. Never change a key, and keep every <code>{{placeholder}}</code> exactly as written.</li>
+      <li>Update the <code>_meta</code> block at the top honestly: your name as translator, and whether it is human or machine translated.</li>
+      <li>Send the change. A check runs automatically and tells you if a placeholder was damaged.</li>
+    </ol>
+    <p>The full guide, with the rules and examples, is the <a href="https://github.com/Esperanta-Skanaduko/esperanto-i18n/blob/main/docs/TRANSLATING.md">translator guide</a>. Prefer not to edit files? Use the <a href="https://github.com/Esperanta-Skanaduko/esperanto-i18n/issues/new?template=translation-fix.yml">Translation fix form</a>.</p>
+  </section>
+</main>
+<footer class="site"><div class="wrap">Part of <a href="../">Esperanta Skanaduko open source</a> · <a href="https://esperantaskanaduko.com/">esperantaskanaduko.com</a> · MIT licensed.</div></footer>
+<script>
+(async () => {
+  let data;
+  try { data = await (await fetch('status.json')).json(); }
+  catch (error) { document.getElementById('stats').textContent = 'Could not load the status: ' + error.message; return; }
+  const rows = document.getElementById('rows');
+  const q = document.getElementById('q');
+  const sort = document.getElementById('sort');
+  const el = (tag, text, attributes = {}) => { const node = document.createElement(tag); if (text !== undefined) node.textContent = text; Object.assign(node, attributes); return node; };
+  const langs = data.languages;
+  const average = langs.reduce((total, language) => total + language.coverage, 0) / langs.length;
+  const stats = document.getElementById('stats');
+  for (const [value, label] of [[String(langs.length + 1), 'languages (with English)'], [String(data.baselineKeys), 'strings per language'], [langs.filter((l) => l.coverage >= 95).length + 1 + '', 'nearly complete (95%+, with English)'], [average.toFixed(1) + '%', 'average of the other languages']]) {
+    const box = el('div', undefined, { className: 'stat' }); box.append(el('b', value), el('span', label, { className: 'muted' })); stats.append(box);
+  }
+  const render = () => {
+    const needle = q.value.trim().toLowerCase();
+    const list = langs.filter((language) => !needle || [language.name, language.nativeName, language.code].some((text) => text.toLowerCase().includes(needle)));
+    list.sort(sort.value === 'name' ? (a, b) => a.name.localeCompare(b.name) : sort.value === 'coverage-desc' ? (a, b) => b.coverage - a.coverage || a.name.localeCompare(b.name) : (a, b) => a.coverage - b.coverage || a.name.localeCompare(b.name));
+    rows.replaceChildren(...list.map((language) => {
+      const tr = el('tr');
+      const name = el('th', undefined, { scope: 'row' }); name.append(language.name + ' ', el('span', language.nativeName, { className: 'muted', lang: language.code, dir: language.rtl ? 'rtl' : 'ltr' }));
+      const bar = el('div', undefined, { className: 'bar' }); const fill = el('i'); fill.style.width = language.coverage + '%'; bar.append(fill);
+      const coverage = el('td'); coverage.append(el('div', language.coverage + '%'), bar);
+      const help = el('td'); help.append(el('a', 'Edit', { href: 'https://github.com/Esperanta-Skanaduko/esperanto-i18n/edit/main/locales/' + language.code + '.json', title: 'Edit ' + language.name + ' on GitHub' }));
+      const problems = language.errors.length > 0 ? language.status + ' (errors)' : language.status;
+      tr.append(name, el('td', language.code), coverage, el('td', String(language.missing), { className: 'num' }), el('td', String(language.untranslated), { className: 'num' }), el('td', problems), help);
+      return tr;
+    }));
+  };
+  q.addEventListener('input', render); sort.addEventListener('change', render); render();
+})();
+</script>
+</body>
+</html>

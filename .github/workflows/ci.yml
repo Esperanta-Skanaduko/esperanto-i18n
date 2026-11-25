@@ -17,7 +17,7 @@ jobs:
         run: npm test
       - name: Audit (errors fail the build, warnings do not)
         run: npm run audit
-      - name: docs/STATUS.md is up to date
+      - name: docs/STATUS.md and site/status.json are up to date
         run: |
           npm run status
-          git diff --exit-code docs/STATUS.md
+          git diff --exit-code docs/STATUS.md site/status.json

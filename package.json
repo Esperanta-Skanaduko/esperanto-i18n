@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Esperanta-Skanaduko/esperanto-i18n.git"
   },
-  "homepage": "https://github.com/Esperanta-Skanaduko/esperanto-i18n#readme",
+  "homepage": "https://esperantaskanaduko.com/open-source/esperanto-i18n/",
   "bugs": "https://github.com/Esperanta-Skanaduko/esperanto-i18n/issues",
   "type": "module",
   "files": ["locales", "languages.json", "audit-allowlist.json", "scripts", "docs", "README.md", "LICENSE"],
@@ -30,7 +30,7 @@
     "audit": "node scripts/audit.mjs",
     "audit:strict": "node scripts/audit.mjs --strict",
     "generate": "node scripts/generate.mjs",
-    "status": "node scripts/audit.mjs --markdown --out docs/STATUS.md",
+    "status": "node scripts/audit.mjs --markdown --out docs/STATUS.md && node scripts/build-site-data.mjs",
     "test": "node --test test/"
   },
   "engines": { "node": ">=20" }
