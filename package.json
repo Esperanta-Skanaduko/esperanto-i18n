@@ -1,0 +1,37 @@
+{
+  "name": "esperanto-i18n",
+  "version": "0.1.0",
+  "description": "Translations of the Esperanta Skanaduko website into 66 languages, with tools to audit and complete them.",
+  "keywords": ["esperanto", "i18n", "translations", "locales", "i18next", "l10n"],
+  "license": "MIT",
+  "author": {
+    "name": "Victor Williams",
+    "email": "victor.williams.dev@gmail.com",
+    "url": "https://github.com/Vaporjawn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esperanta-Skanaduko/esperanto-i18n.git"
+  },
+  "homepage": "https://github.com/Esperanta-Skanaduko/esperanto-i18n#readme",
+  "bugs": "https://github.com/Esperanta-Skanaduko/esperanto-i18n/issues",
+  "type": "module",
+  "files": ["locales", "languages.json", "audit-allowlist.json", "scripts", "docs", "README.md", "LICENSE"],
+  "exports": {
+    "./locales/*": "./locales/*",
+    "./languages.json": "./languages.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "esperanto-i18n-audit": "scripts/audit.mjs",
+    "esperanto-i18n-generate": "scripts/generate.mjs"
+  },
+  "scripts": {
+    "audit": "node scripts/audit.mjs",
+    "audit:strict": "node scripts/audit.mjs --strict",
+    "generate": "node scripts/generate.mjs",
+    "status": "node scripts/audit.mjs --markdown --out docs/STATUS.md",
+    "test": "node --test test/"
+  },
+  "engines": { "node": ">=20" }
+}

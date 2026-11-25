@@ -1,0 +1,327 @@
+{
+  "_meta": {
+    "language": "Eesti",
+    "code": "et",
+    "translationStatus": "human-translated",
+    "note": "Täielik eestikeelne tõlge",
+    "lastUpdated": "2025-10-12"
+  },
+  "common": {
+    "site": {
+      "name": "Esperanta\nSkanaduko",
+      "tagline": "Põhjalik esperanto õppe- ja ressursiveebisait",
+      "description": "Õppige esperantot põhjalike ressursside, interaktiivsete tööriistade ja kogukonnaühenduste kaudu. Juurdepääs 200+ kureeritud õppematerjalidele, raamatutele, muusikale, videotele ja muule."
+    },
+    "navigation": {
+      "home": "Avaleht",
+      "about": "Meist",
+      "library": "Raamatukogu"
+    },
+    "ui": {
+      "loading": "Laadimine...",
+      "error": "Viga",
+      "language": "Keel",
+      "switchLanguage": "Vaheta keelt"
+    }
+  },
+  "seo": {
+    "pages": {
+      "home": {
+        "title": "Esperanta Skanaduko - Õpi esperantot veebis",
+        "description": "Teie põhjalik keskus esperanto õppimiseks. Juurdepääs ressurssidele, raamatutele, muusikale, kogukonnaühendustele ja interaktiivsetele tööriistadele rahvusvahelise keele valdamiseks.",
+        "keywords": "õpi esperantot, esperanto õppimine, rahvusvaheline keel, konstrueeritud keel, keeleõppe platvorm"
+      },
+      "resources": {
+        "title": "Esperanto ressursid - Õppematerjalid ja tööriistad",
+        "description": "Avasta 200+ põhjalikku esperanto õpperessurssi, sealhulgas grammatikaõpikud, muusika, taskuhäälingud, videod, kogukonna kaardid, kursused ja tööriistad. Tasuta ressursid algajatele kuni edasijõudnuteni.",
+        "keywords": "esperanto õpperessursid, õpi esperantot, esperanto grammatika, esperanto muusika, esperanto taskuhäälingud, esperanto kogukond, esperanto kursused, esperanto tööriistad, keeleõpe"
+      },
+      "library": {
+        "title": "Esperanto raamatukogu - Raamatud ja lugemismaterjalid",
+        "description": "Sirvi meie kureeritud esperanto raamatute, romaanide ja lugemismaterjalide kogust. Ideaalne õppijatele kõigil tasemetel.",
+        "keywords": "esperanto raamatud, esperanto raamatukogu, esperanto lugemine, esperanto kirjandus, õpi esperanto lugemist"
+      },
+      "concerts": {
+        "title": "Esperanto otsekontserdivideod",
+        "description": "Vaata otseesinemisi esperanto muusikutelt üle maailma. Avasta elav muusikakultuur esperanto kogukonnas.",
+        "keywords": "esperanto muusika, esperanto kontserdid, esperanto muusikud, esperanto kultuur, otsemuusika"
+      }
+    }
+  },
+  "navigation": {
+    "main": {
+      "home": "Avaleht",
+      "library": "Raamatukogu",
+      "about": "Meist",
+      "resources": "Ressursid"
+    },
+    "secondary": {
+      "contact": "Kontakt",
+      "donate": "Anneta",
+      "analyzer": "Analüsaator"
+    }
+  },
+  "donate": {
+    "hero": {
+      "title": "Toeta meie missiooni",
+      "subtitle": "Aita meil hoida Esperanta Skanaduko tasuta ja kättesaadavana õppijatele üle maailma. Teie tugi võimaldab meil platvormi hooldada, uut sisu luua ja kogukonda kasvatada."
+    },
+    "sections": {
+      "methods": {
+        "title": "Valige oma eelistatud meetod"
+      },
+      "impact": {
+        "title": "Teie mõju",
+        "description": "Iga annetus, olenemata suurusest, aitab meil jätkata meie missiooni. Siin on, kuidas teie tugi loob vahet:"
+      },
+      "thankYou": {
+        "title": "Dankon! Täname teid!",
+        "message": "Teie heldekäelisus aitab säilitada ja jagada esperanto ilu õppijatega üle maailma. Koos ehitame sildu kultuuride ja keelte vahel."
+      }
+    },
+    "actions": {
+      "donateNow": "Anneta kohe"
+    },
+    "methods": {
+      "paypal": {
+        "title": "PayPal",
+        "description": "Turvalised ühekordse või korduva annetused"
+      },
+      "buymeacoffee": {
+        "title": "Buy Me a Coffee",
+        "description": "Toeta kohviannetusega"
+      },
+      "patreon": {
+        "title": "Patreon",
+        "description": "Igakuine tugi jätkuvaks arenduseks"
+      }
+    },
+    "impacts": {
+      "hosting": {
+        "title": "Serveri majutus",
+        "description": "Hoia veebisaiti töös 24/7 ülemaailmseks juurdepääsuks",
+        "amount": "$10/kuus"
+      },
+      "content": {
+        "title": "Sisu loomine",
+        "description": "Uute õppematerjalide ja ressursside arendamine",
+        "amount": "$25/kuus"
+      },
+      "development": {
+        "title": "Arendustööriistad",
+        "description": "Platvormi funktsioonide hooldamine ja parandamine",
+        "amount": "$15/kuus"
+      },
+      "community": {
+        "title": "Kogukonna tugi",
+        "description": "Esperanto kogukonna modereerimine ja toetamine",
+        "amount": "$20/kuus"
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "welcome": "Tere tulemast Esperanta Skanaduko lehele",
+      "description": "Avasta esperanto ilu meie põhjaliku õpperessursside, raamatute ja interaktiivsete tööriistade kogu kaudu."
+    },
+    "actions": {
+      "getStarted": "Alusta",
+      "learnMore": "Lisateave"
+    },
+    "features": {
+      "title": "Funktsioonid",
+      "items": {
+        "library": {
+          "title": "Põhjalik raamatukogu",
+          "description": "Juurdepääs tuhandetele esperanto raamatutele, artiklitele ja õppematerjalidele"
+        },
+        "interactive": {
+          "title": "Interaktiivne õpe",
+          "description": "Tegele interaktiivsete tööriistade ja harjutustega oma oskuste parandamiseks"
+        },
+        "community": {
+          "title": "Ülemaailmne kogukond",
+          "description": "Ühenda esperanto õppijate ja kõnelejatega üle maailma"
+        }
+      }
+    }
+  },
+  "about": {
+    "page": {
+      "title": "About Esperanta Skanduko",
+      "description": "Esperanta Skanduko is dedicated to making Esperanto learning accessible and engaging for everyone."
+    },
+    "sections": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "To preserve and share Esperanto literature, learning materials, and cultural resources with the world."
+      },
+      "esperanto": {
+        "title": "What is Esperanto?",
+        "description": "Esperanto is an international auxiliary language designed for ease of learning and international communication."
+      }
+    }
+  },
+  "library": {
+    "page": {
+      "title": "Library"
+    },
+    "search": {
+      "placeholder": "Search books..."
+    },
+    "filters": {
+      "categories": "Categories",
+      "allBooks": "All Books"
+    },
+    "results": {
+      "noResults": "No books found",
+      "booksFound": "books found"
+    }
+  },
+  "footer": {
+    "legal": {
+      "copyright": "All rights reserved",
+      "madeWith": "Made with",
+      "forCommunity": "for the Esperanto community",
+      "developedBy": "Developed with ❤️ by"
+    },
+    "projects": {
+      "title": "Related Projects",
+      "esperantoAnalyzer": {
+        "title": "Esperanto Analyzer",
+        "description": "NPM package for Esperanto text analysis"
+      }
+    },
+    "social": {
+      "title": "Connect",
+      "links": {
+        "github": "GitHub",
+        "issues": "Report Issue",
+        "contribute": "Contribute"
+      }
+    },
+    "acknowledgments": {
+      "title": "Acknowledgments",
+      "gutenberg": "Special thanks to Project Gutenberg for providing free Esperanto books"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page Not Found",
+      "action": "Go Home"
+    },
+    "general": {
+      "title": "Something went wrong",
+      "action": "Try Again"
+    }
+  },
+  "auth": {
+    "actions": {
+      "signUp": "Sign Up",
+      "logIn": "Log In",
+      "signOut": "Sign Out"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password"
+    },
+    "links": {
+      "forgotPassword": "Forgot Password?",
+      "alreadyHaveAccount": "Already have an account?",
+      "noAccount": "Don't have an account?"
+    },
+    "status": {
+      "creatingAccount": "Creating your account...",
+      "welcomeBack": "Welcome Back",
+      "getStarted": "Get Started"
+    },
+    "errors": {
+      "validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "passwordRequired": "Password is required",
+        "passwordTooShort": "Password must be at least 6 characters",
+        "passwordsNoMatch": "Passwords do not match"
+      },
+      "firebase": {
+        "emailInUse": "This email is already in use",
+        "userNotFound": "No account found with this email",
+        "wrongPassword": "Incorrect password",
+        "tooManyAttempts": "Too many failed attempts. Please try again later",
+        "networkError": "Network error. Please check your connection",
+        "unknownError": "An unexpected error occurred. Please try again"
+      }
+    },
+    "success": {
+      "accountCreated": "Account created successfully!",
+      "signedIn": "Welcome back!",
+      "signedOut": "Signed out successfully"
+    }
+  },
+  "resources": {
+    "page": {
+      "title": "Esperanto Resources",
+      "subtitle": "Comprehensive collection of learning materials, tools, and community resources"
+    },
+    "search": {
+      "label": "Search resources...",
+      "placeholder": "Search by title, description, or tags..."
+    },
+    "filters": {
+      "filterBy": "Filter by category",
+      "clearAll": "Clear All Filters"
+    },
+    "sections": {
+      "featured": "Featured Resources",
+      "total": "Total Resources",
+      "concertVideos": {
+        "title": "Esperanto Live Concert Videos",
+        "description": "Watch performances from Esperanto musicians worldwide"
+      }
+    },
+    "results": {
+      "showing": "Showing {{count}} resources",
+      "noResults": "No resources found",
+      "noResultsDescription": "Try adjusting your search or filter criteria"
+    },
+    "categories": {
+      "all": "All Resources",
+      "learning": "Learning Resources",
+      "grammar": "Grammar Guides",
+      "tools": "Tools & Keyboards",
+      "music": "Music & Artists",
+      "audio": "Audio & Podcasts",
+      "video": "Video Resources",
+      "community": "Community & Maps",
+      "events": "Events & Courses",
+      "organizations": "Organizations",
+      "culture": "Culture & History",
+      "news": "News & Literature",
+      "books": "Books & Reading"
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "allLevels": "All Levels"
+    },
+    "labels": {
+      "free": "Free",
+      "paid": "Paid",
+      "freemium": "Freemium",
+      "requiresAccount": "Account Required",
+      "external": "External Link",
+      "featured": "Featured",
+      "new": "New",
+      "popular": "Popular"
+    },
+    "actions": {
+      "visitSite": "Visit Site",
+      "learnMore": "Learn More",
+      "download": "Download",
+      "register": "Register",
+      "viewDetails": "View Details"
+    }
+  }
+}

@@ -1,0 +1,566 @@
+{
+  "common": {
+    "site": {
+      "name": "Esperanta\nSkanaduko",
+      "tagline": "A comprehensive Esperanto learning and resource website",
+      "description": "Learn Esperanto through comprehensive resources, interactive tools, and community connections. Access 200+ curated learning materials, books, music, videos, and more."
+    },
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "library": "Library"
+    },
+    "ui": {
+      "loading": "Loading...",
+      "error": "Error",
+      "language": "Language",
+      "switchLanguage": "Switch Language",
+      "selectLanguage": "Select Language",
+      "searchLanguages": "Search languages...",
+      "noLanguagesFound": "No languages found"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "openUserMenu": "Open user menu",
+    "openNavMenu": "Open navigation menu",
+    "closeSearch": "Clear search",
+    "switchLanguage": "Switch language",
+    "languageChanged": "Language changed to {{language}}",
+    "closeDialog": "Close dialog",
+    "clearSearch": "Clear search input"
+  },
+  "seo": {
+    "pages": {
+      "home": {
+        "title": "Esperanta Skanaduko - Learn Esperanto Online",
+        "description": "Your comprehensive hub for learning Esperanto. Access resources, books, music, community connections, and interactive tools to master the international language.",
+        "keywords": "learn Esperanto, Esperanto learning, international language, constructed language, language learning platform"
+      },
+      "resources": {
+        "title": "Esperanto Resources - Learning Materials & Tools",
+        "description": "Discover 200+ comprehensive Esperanto learning resources including grammar guides, music, podcasts, videos, community maps, courses, and tools. Free resources for beginners to advanced learners.",
+        "keywords": "Esperanto learning resources, learn Esperanto, Esperanto grammar, Esperanto music, Esperanto podcasts, Esperanto community, Esperanto courses, Esperanto tools, language learning"
+      },
+      "library": {
+        "title": "Esperanto Library - Books & Reading Materials",
+        "description": "Browse our curated collection of Esperanto books, novels, and reading materials. Perfect for learners at all levels.",
+        "keywords": "Esperanto books, Esperanto library, Esperanto reading, Esperanto literature, learn Esperanto reading"
+      },
+      "concerts": {
+        "title": "Esperanto Live Concert Videos",
+        "description": "Watch live performances from Esperanto musicians worldwide. Discover the vibrant music culture in the Esperanto community.",
+        "keywords": "Esperanto music, Esperanto concerts, Esperanto musicians, Esperanto culture, live music"
+      },
+      "hangman": {
+        "title": "Pendumulo - Esperanto Hangman Game",
+        "description": "Play Pendumulo, a hangman game for the Esperanto alphabet. Practise vocabulary and the letters ĉ, ĝ, ĥ, ĵ, ŝ and ŭ."
+      },
+      "analyzer": {
+        "title": "Esperanto Analyzer - Parts of Speech & Grammar",
+        "description": "Paste Esperanto text and see the part of speech, number, case and verb tense of every word."
+      }
+    }
+  },
+  "navigation": {
+    "main": {
+      "home": "Home",
+      "library": "Library",
+      "about": "About",
+      "resources": "Resources",
+      "play": "Extras",
+      "hangman": "Pendumulo (hangman)"
+    },
+    "secondary": {
+      "contact": "Contact",
+      "donate": "Donate",
+      "analyzer": "Analyzer"
+    },
+    "breadcrumbs": {
+      "home": "Home",
+      "resources": "Resources",
+      "library": "Library"
+    }
+  },
+  "donate": {
+    "hero": {
+      "title": "Support Our Mission",
+      "subtitle": "Help us keep Esperanta Skanaduko free and accessible to learners worldwide. Your support enables us to maintain the platform, create new content, and grow the community."
+    },
+    "sections": {
+      "methods": {
+        "title": "Choose Your Preferred Method"
+      },
+      "impact": {
+        "title": "Your Impact",
+        "description": "Every donation, no matter the size, helps us continue our mission. Here's how your support makes a difference:"
+      },
+      "thankYou": {
+        "title": "Dankon! Thank You!",
+        "message": "Your generosity helps preserve and share the beauty of Esperanto with learners around the world. Together, we're building bridges across cultures and languages."
+      }
+    },
+    "actions": {
+      "donateNow": "Donate Now"
+    },
+    "methods": {
+      "paypal": {
+        "title": "PayPal",
+        "description": "Secure one-time or recurring donations"
+      },
+      "buymeacoffee": {
+        "title": "Buy Me a Coffee",
+        "description": "Support with a coffee donation"
+      },
+      "patreon": {
+        "title": "Patreon",
+        "description": "Monthly support for ongoing development"
+      }
+    },
+    "impacts": {
+      "hosting": {
+        "title": "Server Hosting",
+        "description": "Keep the website running 24/7 for global access",
+        "amount": "$10/month"
+      },
+      "content": {
+        "title": "Content Creation",
+        "description": "Develop new learning materials and resources",
+        "amount": "$25/month"
+      },
+      "development": {
+        "title": "Development Tools",
+        "description": "Maintain and improve the platform features",
+        "amount": "$15/month"
+      },
+      "community": {
+        "title": "Community Support",
+        "description": "Moderate and support the Esperanto community",
+        "amount": "$20/month"
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "welcome": "Welcome to Esperanta Skanduko",
+      "description": "Discover the beauty of Esperanto through our comprehensive collection of learning resources, books, and interactive tools."
+    },
+    "actions": {
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "cta": {
+      "exploreResources": "Explore Resources",
+      "browseLibrary": "Browse Library",
+      "startLearning": "Start Learning"
+    },
+    "features": {
+      "title": "Features",
+      "items": {
+        "library": {
+          "title": "Comprehensive Library",
+          "description": "Access thousands of Esperanto books, articles, and learning materials"
+        },
+        "interactive": {
+          "title": "Interactive Learning",
+          "description": "Engage with interactive tools and exercises to improve your skills"
+        },
+        "community": {
+          "title": "Global Community",
+          "description": "Connect with Esperanto learners and speakers from around the world"
+        }
+      },
+      "stats": {
+        "resources": {
+          "title": "200+ Resources",
+          "description": "Curated learning materials, tools, and community resources for every level"
+        },
+        "library": {
+          "title": "Esperanto Library",
+          "description": "Access classic and modern Esperanto literature, all free"
+        },
+        "music": {
+          "title": "Music & Culture",
+          "description": "Explore Esperanto music, concerts, and cultural content"
+        },
+        "languages": {
+          "title": "66 Languages",
+          "description": "Browse and learn in your native language"
+        }
+      }
+    }
+  },
+  "about": {
+    "page": {
+      "title": "About Esperanta Skanduko",
+      "description": "Esperanta Skanduko is dedicated to making Esperanto learning accessible and engaging for everyone."
+    },
+    "sections": {
+      "website": {
+        "title": "About the Website",
+        "body": "Welcome to Esperanta Skanaduko, a new online Esperanto library. This project's goal is to provide a well-organized library of original and translated texts."
+      },
+      "license": {
+        "title": "License Issues",
+        "body": "Many texts are old enough to automatically be in the public domain, many are in the public domain in some countries while copyrighted in others. This website publishes works for which the international minimum of 50 years after the author's death is satisfied. It is the reader's responsibility to know his or her country's copyright laws."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "To preserve and share Esperanto literature, learning materials, and cultural resources with the world.",
+        "body": "We strive to make Esperanto more accessible to everyone by providing a free and comprehensive collection of literature. Whether you are a beginner or an experienced Esperanto speaker, this library offers something for everyone."
+      },
+      "esperanto": {
+        "title": "What is Esperanto?",
+        "description": "Esperanto is an international auxiliary language designed for ease of learning and international communication."
+      },
+      "team": {
+        "title": "Team",
+        "body": "Esperanta Skanduko is built and maintained by community volunteers who believe in the power of Esperanto to connect people across languages and cultures. We welcome anyone who shares a passion for the language to get involved.",
+        "founderRole": "Founder & Developer"
+      },
+      "relatedProjects": {
+        "title": "Related Projects",
+        "body": "Other open-source projects in the Esperanto ecosystem:",
+        "esperantoAnalyzer": {
+          "name": "Esperanto Analyzer",
+          "description": "Analyse the parts of speech and grammar of any Esperanto text, right here on the site."
+        },
+        "mangaDex": {
+          "name": "Esperanto Manga (MangaDex)",
+          "description": "A curated collection of manga translated into Esperanto, freely readable on MangaDex."
+        },
+        "pendumulo": {
+          "name": "Pendumulo",
+          "description": "A hangman game for the Esperanto alphabet, including ĉ, ĝ, ĥ, ĵ, ŝ and ŭ."
+        },
+        "extensions": {
+          "name": "Browser Extensions",
+          "description": "Chrome extensions that translate web pages into Esperanto (source code on GitHub)."
+        }
+      },
+      "contribute": {
+        "title": "Contribute",
+        "body": "Esperanta Skanduko is open source and welcomes contributions of all kinds:",
+        "code": "Submit code improvements, bug fixes, or new features via GitHub pull requests.",
+        "translations": "Help translate the interface into more languages or improve existing translations.",
+        "resources": "Suggest Esperanto learning materials, books, or cultural content.",
+        "cta": "View on GitHub"
+      },
+      "techStack": {
+        "title": "Tech Stack",
+        "body": "Built with modern open-source technology:",
+        "items": [
+          {
+            "name": "React 18",
+            "description": "UI library"
+          },
+          {
+            "name": "TypeScript",
+            "description": "Type-safe JavaScript"
+          },
+          {
+            "name": "Vite",
+            "description": "Fast build tooling"
+          },
+          {
+            "name": "Material UI v7",
+            "description": "Component library"
+          },
+          {
+            "name": "Firebase",
+            "description": "Auth & database"
+          },
+          {
+            "name": "i18next",
+            "description": "66 locales"
+          }
+        ]
+      },
+      "connect": {
+        "title": "Connect",
+        "body": "Find the project online or get in touch:",
+        "github": "Source code and issues on GitHub",
+        "mangaDex": "Esperanto manga collection on MangaDex",
+        "email": "Contact the maintainer by email"
+      }
+    }
+  },
+  "library": {
+    "page": {
+      "title": "Library"
+    },
+    "search": {
+      "placeholder": "Search books..."
+    },
+    "filters": {
+      "categories": "Categories",
+      "allBooks": "All Books"
+    },
+    "results": {
+      "noResults": "No books found",
+      "booksFound": "books found"
+    },
+    "pagination": {
+      "showing": "Showing {{from}}–{{to}} of {{total}} books",
+      "previous": "Previous page",
+      "next": "Next page"
+    },
+    "book": {
+      "author": "Author",
+      "year": "Year",
+      "pages": "pages",
+      "readOnline": "Read Online",
+      "download": "Download",
+      "open": "Open"
+    }
+  },
+  "footer": {
+    "legal": {
+      "copyright": "All rights reserved",
+      "madeWith": "Made with",
+      "forCommunity": "for the Esperanto community",
+      "developedBy": "Developed with ❤️ by"
+    },
+    "projects": {
+      "title": "Related Projects",
+      "esperantoAnalyzer": {
+        "title": "Esperanto Analyzer",
+        "description": "Analyse Esperanto text word by word"
+      }
+    },
+    "social": {
+      "title": "Connect",
+      "links": {
+        "github": "GitHub",
+        "issues": "Report Issue",
+        "contribute": "Contribute",
+        "suggestResource": "Suggest a Resource"
+      }
+    },
+    "acknowledgments": {
+      "title": "Acknowledgments",
+      "gutenberg": "Special thanks to Project Gutenberg for providing free Esperanto books"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page Not Found",
+      "message": "The page you're looking for doesn't exist or has been moved.",
+      "action": "Go Home"
+    },
+    "general": {
+      "title": "Something went wrong",
+      "action": "Try Again"
+    }
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "auth": {
+    "actions": {
+      "signUp": "Sign Up",
+      "logIn": "Log In",
+      "signOut": "Sign Out",
+      "signInWithGoogle": "Continue with Google"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password"
+    },
+    "links": {
+      "forgotPassword": "Forgot Password?",
+      "alreadyHaveAccount": "Already have an account?",
+      "noAccount": "Don't have an account?"
+    },
+    "divider": {
+      "orContinueWith": "or continue with"
+    },
+    "status": {
+      "creatingAccount": "Creating your account...",
+      "welcomeBack": "Welcome Back",
+      "getStarted": "Get Started"
+    },
+    "errors": {
+      "validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "passwordRequired": "Password is required",
+        "passwordTooShort": "Password must be at least 6 characters",
+        "passwordsNoMatch": "Passwords do not match"
+      },
+      "firebase": {
+        "emailInUse": "This email is already in use",
+        "userNotFound": "No account found with this email",
+        "wrongPassword": "Incorrect password",
+        "tooManyAttempts": "Too many failed attempts. Please try again later",
+        "networkError": "Network error. Please check your connection",
+        "unknownError": "An unexpected error occurred. Please try again"
+      }
+    },
+    "success": {
+      "accountCreated": "Account created successfully!",
+      "signedIn": "Welcome back!",
+      "signedOut": "Signed out successfully"
+    }
+  },
+  "resources": {
+    "page": {
+      "title": "Esperanto Resources",
+      "subtitle": "Comprehensive collection of learning materials, tools, and community resources"
+    },
+    "search": {
+      "label": "Search resources...",
+      "placeholder": "Search by title, description, or tags..."
+    },
+    "filters": {
+      "filterBy": "Filter by category",
+      "clearAll": "Clear All Filters"
+    },
+    "sections": {
+      "featured": "Featured Resources",
+      "total": "Total Resources",
+      "concertVideos": {
+        "title": "Esperanto Live Concert Videos",
+        "description": "Watch performances from Esperanto musicians worldwide"
+      }
+    },
+    "results": {
+      "showing": "Showing {{count}} resources",
+      "showingOf": "Showing {{count}} of {{total}}",
+      "noResults": "No resources found",
+      "noResultsDescription": "Try adjusting your search or filter criteria"
+    },
+    "loadMore": "Load More",
+    "categories": {
+      "all": "All Resources",
+      "learning": "Learning Resources",
+      "grammar": "Grammar Guides",
+      "tools": "Tools & Keyboards",
+      "music": "Music & Artists",
+      "audio": "Audio & Podcasts",
+      "video": "Video Resources",
+      "community": "Community & Maps",
+      "events": "Events & Courses",
+      "organizations": "Organizations",
+      "culture": "Culture & History",
+      "news": "News & Literature",
+      "books": "Books & Reading"
+    },
+    "pages": {
+      "learning": {
+        "description": "Comprehensive courses, lessons, and materials for learning Esperanto at all levels"
+      },
+      "grammar": {
+        "description": "Comprehensive grammar guides and references for mastering Esperanto grammar"
+      },
+      "tools": {
+        "description": "Essential tools, keyboards, dictionaries, and utilities for working with Esperanto"
+      },
+      "books": {
+        "description": "Browse our collection of Esperanto books, novels, and reading materials for all levels"
+      },
+      "music": {
+        "description": "Discover Esperanto musicians, bands, and music from around the world"
+      },
+      "audio": {
+        "description": "Listen to Esperanto podcasts, radio shows, and audio lessons"
+      },
+      "video": {
+        "description": "Watch Esperanto videos, tutorials, YouTube channels, and video lessons"
+      },
+      "community": {
+        "description": "Connect with Esperanto speakers worldwide through communities, forums, and interactive maps"
+      },
+      "events": {
+        "description": "Find Esperanto events, courses, conferences, and meetups worldwide"
+      },
+      "organizations": {
+        "description": "Explore Esperanto organizations, associations, and institutions worldwide"
+      },
+      "culture": {
+        "description": "Learn about Esperanto culture, history, traditions, and the global Esperanto movement"
+      },
+      "news": {
+        "description": "Read Esperanto news, magazines, newspapers, and literary publications"
+      }
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "allLevels": "All Levels"
+    },
+    "labels": {
+      "free": "Free",
+      "paid": "Paid",
+      "freemium": "Freemium",
+      "requiresAccount": "Account Required",
+      "external": "External Link",
+      "featured": "Featured",
+      "new": "New",
+      "popular": "Popular"
+    },
+    "actions": {
+      "visitSite": "Visit Site",
+      "learnMore": "Learn More",
+      "download": "Download",
+      "register": "Register",
+      "viewDetails": "View Details",
+      "readOnline": "Read Online",
+      "open": "Open"
+    }
+  },
+  "games": {
+    "hangman": {
+      "title": "Pendumulo",
+      "subtitle": "Guess the Esperanto word before the figure is complete.",
+      "figureLabel": "Hangman with {{count}} mistakes",
+      "unknownLetter": "unknown letter",
+      "letterLabel": "letter {{letter}}",
+      "wordLabel": "Word to guess",
+      "keyboardLabel": "Esperanto keyboard",
+      "playing": "Guess the word…",
+      "won": "🎉 You won!",
+      "lostPrefix": "You lost. The word was:",
+      "newGame": "New game",
+      "mistakes": "Mistakes: {{count}}/{{max}}",
+      "stats": "Games: {{games}} | Wins: {{wins}} | Streak: {{streak}}",
+      "keyboardHint": "Tip: type cx, gx, hx, jx, sx or ux to enter ĉ, ĝ, ĥ, ĵ, ŝ or ŭ."
+    }
+  },
+  "analyzer": {
+    "title": "Analyzer",
+    "subtitle": "See the grammar of every word in an Esperanto text.",
+    "inputLabel": "Esperanto text",
+    "inputHelp": "{{count}} / {{max}} characters",
+    "summary": "Summary",
+    "tableLabel": "Word analysis",
+    "columns": {
+      "word": "Word",
+      "partOfSpeech": "Part of speech",
+      "features": "Features",
+      "confidence": "Confidence"
+    },
+    "features": {
+      "plural": "plural",
+      "accusative": "accusative",
+      "possessive": "possessive"
+    },
+    "pos": {
+      "Noun": "Noun (substantivo)",
+      "Verb": "Verb (verbo)",
+      "Adjective": "Adjective (adjektivo)",
+      "Adverb": "Adverb (adverbo)",
+      "Pronoun": "Pronoun (pronomo)",
+      "Preposition": "Preposition (prepozicio)",
+      "Conjunction": "Conjunction (konjunkcio)",
+      "Interjection": "Interjection (interjekcio)",
+      "Article": "Article (artikolo)",
+      "Numeral": "Numeral (numeralo)",
+      "Unknown": "Unknown",
+      "Undefined": "Undefined"
+    }
+  }
+}

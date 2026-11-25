@@ -1,0 +1,11 @@
+{
+  "_comment": "Keys whose text is the same in every language (brand and project names). The audit does not count these as untranslated. Add a key here only when English really is the correct text.",
+  "sameAsEnglish": [
+    "about.sections.relatedProjects.pendumulo.name",
+    "common.site.name",
+    "donate.methods.patreon.title",
+    "donate.methods.paypal.title",
+    "footer.social.links.github",
+    "games.hangman.title"
+  ]
+}

@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Unit and data tests
+        run: npm test
+      - name: Audit (errors fail the build, warnings do not)
+        run: npm run audit
+      - name: docs/STATUS.md is up to date
+        run: |
+          npm run status
+          git diff --exit-code docs/STATUS.md

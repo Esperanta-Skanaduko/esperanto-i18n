@@ -1,0 +1,71 @@
+# esperanto-i18n
+
+The translations of the [Esperanta Skanaduko](https://esperantaskanaduko.com) website, in 66 languages, with the tools to check and complete them.
+
+You do not need to be a programmer to help. If you read Esperanto and another language, you can fix a translation by editing one JSON file. Start with the [translator guide](docs/TRANSLATING.md).
+
+## Where things stand
+
+The site's own text is 297 strings. Today **only Esperanto is nearly complete**; every other language covers roughly half of it, and 14 languages are still English placeholders. The full table is in [docs/STATUS.md](docs/STATUS.md). The biggest gap is shared by all languages: the `accessibility`, `theme`, `games` and `analyzer` sections exist only in English and Esperanto, so the other 64 languages show those parts of the site in English.
+
+Missing text is never blank on the site. The app falls back to English (`fallbackLng: 'en'`), so a gap is an English sentence, not a broken page.
+
+## What is in this repository
+
+| Path | What it is |
+| --- | --- |
+| `locales/<code>.json` | One file per language. `en.json` is the source every other file is compared with. |
+| `languages.json` | Name, native name, flag and text direction for each language code. |
+| `audit-allowlist.json` | Keys that are the same in every language on purpose, such as "GitHub". |
+| `scripts/audit.mjs` | Compares every language with English and reports gaps and mistakes. |
+| `scripts/generate.mjs` | Creates a file for a new language, or adds missing keys to existing files. |
+| `docs/` | The translator guide and the generated status table. |
+
+## Use the files in your own project
+
+```bash
+npm install esperanto-i18n
+```
+
+```js
+import es from 'esperanto-i18n/locales/es.json' with { type: 'json' };
+import languages from 'esperanto-i18n/languages.json' with { type: 'json' };
+```
+
+The files use the nested format of [i18next](https://www.i18next.com/), with `{{name}}` placeholders. Any i18next setup can load them directly.
+
+## Check the translations
+
+Node 20 or newer, no dependencies.
+
+```bash
+npm run audit                          # every language
+node scripts/audit.mjs --lang es,fr    # just these
+node scripts/audit.mjs --lang es --verbose   # list every key
+npm run audit:strict                   # warnings fail too (what a finished language must pass)
+npm run status                         # rewrite docs/STATUS.md
+npm test
+```
+
+The audit separates two kinds of problem.
+
+- **Errors** break the website and always fail the run: an empty value, a `{{placeholder}}` that differs from the English text, a file that is not valid JSON.
+- **Warnings** are gaps that fall back to English: missing keys, text still in English, keys that English does not have, and a `_meta` status that claims more than the file delivers.
+
+## Create or complete a language
+
+```bash
+node scripts/generate.mjs --lang xx          # new file; xx must first be added to languages.json
+node scripts/generate.mjs --sync --lang es   # add the missing keys to es.json, in English
+node scripts/generate.mjs --sync --dry-run   # preview, writes nothing
+```
+
+The generator never translates anything. New values are the English text, and a new file says `needs-translation` in its `_meta`.
+
+## Relationship to the website
+
+The website consumes these files from [Vaporjawn/esperantaskanaduko.com](https://github.com/Vaporjawn/esperantaskanaduko.com), where they currently also live under `src/i18n/locales`. This repository is the place to translate; the site is not yet wired to read from here.
+
+## License
+
+[MIT](LICENSE). By contributing a translation you agree that it is published under the same license.
